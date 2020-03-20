@@ -3,3 +3,7 @@ cat marks.txt | awk 'BEGIN{s=0;c=0}{s=s+$2;c=c+1;}END{print "Average: " s/c}'
 
 ## If entries are separated by a token SEPARATOR ( ex: markSEPARATOR99 ), then use this
 cat marks.txt | awk -FSEPARATOR 'BEGIN{s=0;c=0}{s=s+$2;c=c+1;}END{print "Average: " s/c}'
+
+## First part of the hostname
+echo "host1.example.com" | awk -F. '{print $1}' # prints host1
+
