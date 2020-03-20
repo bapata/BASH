@@ -1,0 +1,2 @@
+## Compute average. File marks.txt contains <name> <marks>, one per line
+cat marks.txt | awk 'BEGIN{s=0;c=0}{s=s+$2;c=c+1;}END{print "Average: " s/c}'
