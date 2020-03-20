@@ -1,0 +1,4 @@
+## to replace a string in a file
+## file1.txt
+## bobSEPARATOR94 => bob:94
+cat file1.txt  | sed 's/SEPARATOR/\:/g'
