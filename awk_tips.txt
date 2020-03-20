@@ -1,2 +1,5 @@
 ## Compute average. File marks.txt contains <name> <marks>, one per line
 cat marks.txt | awk 'BEGIN{s=0;c=0}{s=s+$2;c=c+1;}END{print "Average: " s/c}'
+
+## If entries are separated by a token SEPARATOR ( ex: markSEPARATOR99 ), then use this
+cat marks.txt | awk -FSEPARATOR 'BEGIN{s=0;c=0}{s=s+$2;c=c+1;}END{print "Average: " s/c}'
