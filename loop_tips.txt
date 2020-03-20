@@ -1,0 +1,7 @@
+## Assuming data.txt has one number per line
+## and mycube is a binary which prints cube of a number
+
+for ii in $(cat data.txt)
+do  
+./mycube $ii
+done
