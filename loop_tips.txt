@@ -5,3 +5,10 @@ for ii in $(cat data.txt)
 do  
 ./mycube $ii
 done
+
+## Generate 100 host names for testing hostN.example.com
+for ii in {1..100}
+do
+echo "host$ii.example.com"
+done
+
